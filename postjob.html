@@ -1,486 +1,223 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<title>sign up</title>
+@font-face{
+                font-family:new;
+                src:url('new.otf') format("opentype");
+            }
 
-<!-- 
-  Replace form-handler.php with URL where to send the form-data when the form is submitted
-  Goto http://w3c.github.io/html-reference/input.text.html#input.text for more information on all attributes that can be used with text input field
--->
-	<style type="text/css">
-</style>
-<link rel="stylesheet" href="sheet.css" type="text/css">
-	</head>
-<body>
 
-<span style="padding-left: 15px"><img src="logo2.png" width="250" height="50" alt=""/> </span>
-<div class="nav">
-	<div class="dropdown">
-  <button class="dropbtn"><a href="index.html">Home</a></button>
-  <div class="dropdown-content">
-  </div>
-</div>
-<div class="dropdown">
-  <button class="dropbtn">Job seeker</button>
-  <div class="dropdown-content">
-    <a href="#">Find a job</a>
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.sakura1{
+      width: 35%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+        margin-left:auto;
+        margin-right:auto;
+      
+      }
+ 
+
+.dropbtn {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+	.nav{
+		float: right;
+		padding-bottom: 10px;
+	}
+.dropbtn a {
+    color: black;
+    text-decoration: none;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.login {
+ 
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	margin-bottom: 50px;
+     
+}
+.containertable{
+	width:auto; height:auto; margin-left:auto; margin-right:auto; margin-top:30px; 
+    background-color: #f2f2f2;
+    padding: 20px;
+        
+	
+}
+.containertable a{
+	
+	text-decoration: none;
+	display: block;
+	
+}
+.containertable table{
+border-collapse: collapse;
+
+}
+.containertable table td {
+border: 1px solid black;
+	padding: 5px;
+	
+}
+.containertable a{
+	text-decoration: none;
+	display: block;
+}
+.containertable li{
+	margin-top: 2px;
+}
+
+ .container1 {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+        font-family:new;
+}
+
+
+
+.box {
+	width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+
+
+
+
+.container {
+	width:700px; height:auto; margin-left:auto; margin-right:auto; margin-top:30px;
+	border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+        font-family:din;
+}
+
+.containerlogin {
+	width:400px; height:150px; margin-left:auto; margin-right:auto; margin-top:150px;
+	border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+        font-family:din;
+}
+
+.button1 { 
+            background-color: green;
+	width: 300px;
+	align-items: center;
+            border:2px black;
+            color: black;
+            padding: 10px 20.2px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 19.5px;
+            margin: 4px 0px;
+            -webkit-transition-duration: 0.4s; 
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+.strip {
+	background-color:#2E4BB6;
+    border: none;
+    color: white;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 45%;
+	   
+}
+.strip1 {
+	background-color:#17B503;
+    border: none;
+    color: white;
+    width: 110px;
+	height: 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
     
-  </div>
-</div>
-	<div class="dropdown">
-  <button class="dropbtn">Employer</button>
-  <div class="dropdown-content">
-    <a href="postjob.html">Post job</a>
-    <a href="#">Login</a>
-    <a href="signup.html">Singn Up</a>
-  </div>
-</div>
-	<div class="dropdown">
-  <button class="dropbtn">Contact Us</button>
-  <div class="dropdown-content">
-  
-  </div>
-</div>
-</div>
+	
+    
+}
 
-	<hr>
-<div class="content-wrapper" style="margin-left: 0px;">
 
-<section id="tables" class="content-header">
-      <div class="">
-        <div class="row">
-          <div class="col-md-12 latest-job margin-bottom-20" align="center">
-				
-<br>
-<div class="containertable">
-<table border="1" align="center" class="zui-table">
-									<tr valign="middle">
-									<td rowspan="2" align="center"><h5><b>Healthcare Industry Sector</b></h5></td>
-									<td rowspan="2" align="center"><b>Employer</b></td>
-									<td colspan ="2" align="center"><b>Job</b></td>
-									
-									<td align="center" colspan="2"><b>Candidate Qualifications Required/Preferred</b></td>
-									</tr>
-									<tr>
-									<td align="center"><b>Job Function</b></td>
-									<td align="center"><b>&nbsp;Employment&nbsp;</b></td>
-									<td align="center"><b>&nbsp;Degree&nbsp;</b></td>	
-									<td align="center"><b>Major in Engineering</b></td>	
-									<!-- <td align="center"><b>Years of Experience</b></td>	 -->															
-									</tr>
+.strip2 {
+	background-color:#17B503;
+    border: none;
+    color: white;
+    
+	height: 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	
+}
 
-									
-<tr> 							
-<td align="center" valign="middle"><b><i><a href="#providers" class="healthcaresectorSearch" style="color: #0000FF" data-select="Healthcare providers">Healthcare providers</a></i></b></td>
-<td align="left" valign="top">
+footer {
+	margin-top: 20px;
+	background-color: #777;
+    position: relative;
+	height:50px;
+	width:100%;
+    text-align: center;
+	display: inline-block;
+    color: white;
+}
 
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Hospital" >Hospital</a><br><br>
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Clinic">Clinic</a><br><br>
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Dentist">Dentist</a><br><br>
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Allied health">Allied health</a><br> <br>
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Optician">Optician</a><br><br>
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Nursing home">Nursing home</a><br><br>
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Rehabilitation facility">Rehabilitation facility</a><br><br>
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Retirement center">Retirement center</a><br><br>
-<a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Other healthcare organizations">Other healthcare organizations</a>
-</td>
-<td align="left" valign="top" style="line-height:13px;">
-
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Biomedical engineering">Biomedical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Chemical engineering">Chemical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Civil engineering">Civil engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Clinical engineering">Clinical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Computer science/engineering">Computer science/engineering </a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Consulting engineering">Consulting engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Data science/engineering">Data science/engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Electrical engineering">Electrical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Energy engineering">Energy engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Environmental engineering">Environmental engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Facilities engineering">Facilities engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Field engineering">Field engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Industrial engineering">Industrial engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Information technology/engineering">Information <br> &nbsp;&nbsp; technology/engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Infrastructure engineering">Infrastructure engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Mechanical engineering">Mechanical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Medical device service engineering">Medical device service <br> &nbsp;&nbsp; engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Quality engineering">Quality engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Safety engineering">Safety engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Software engineering">Software engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Supply chain engineering">Supply chain engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Surgery engineering">Surgery engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Systems engineering">Systems engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Telecommunication engineering">Telecommunication engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Others">Others </a>
-</td>
-<td align="left" valign="top" style="line-height:21px;">
-
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Full Time">Full Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Part Time">Part Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Temporary">Temporary</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Contract">Contract</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Internship">Internship</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Commission">Commission</a>
-</td>
-<td align="left" valign="top" style="line-height:22px;">
-
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Bachelor">Bachelor</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Master">Master </a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="PhD">PhD</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<td align="left" valign="top" style="line-height:19px;">
-
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Biomedical">Biomedical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Chemical">Chemical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Civil">Civil</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Computer">Computer</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Electrical">Electrical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Environmental">Environmental</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Industrial">Industrial</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Information">Information</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Materials">Materials</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Mechanical">Mechanical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Software">Software</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Systems">Systems </a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<!-- <td align="left">
-<br>
-<a href="#exp" style="color: #0000FF" data-select="1"  id="link1">1</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="2" id="link2">2</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="3" id="link3">3</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="4" id="link4">4</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="5" id="link5">5</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="6" id="link6">6</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="7" id="link7">7</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="8" id="link8">8</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="9" id="link9">9</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="10" id="link10">10</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select=">10" id="link>10">> 10</a><br><br>
-</td> -->
-</tr>
-<tr>
-<td align="center" valign="middle">
-<b><i><br><a href="#providers" class="healthcaresectorSearch" style="color: #0000FF" data-select="Manufacturers of medical devices/equipment/supplies">Manufacturers of medical devices/equipment/supplies</a></i></b>
-</td>
-<td align="left" valign="top" style="line-height:14px;">
-
-<a style="color: #0000FF">Medical device/equipment/supplies manufacturer/distributor in:</a>
-<ul><li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Anesthesiology">Anesthesiology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Cardiovascular">Cardiovascular</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Clinical Chemistry">Clinical Chemistry</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Dental">Dental</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Ear, Nose and Throat">Ear, Nose and Throat</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Gastroenterology and Urology">Gastroenterology and Urology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in General and Plastic Surgery">General and Plastic Surgery</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in General Hospital and Personal Use">General Hospital and Personal Use</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Hematology">Hematology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Immunology">Immunology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Microbiology">Microbiology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Neurology">Neurology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Obstetrical and Gynecological">Obstetrical and Gynecological</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Ophthalmic">Ophthalmic</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Orthopedic">Orthopedic</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Pathology">Pathology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Physical Medicine">Physical Medicine</a></li> 
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Radiology">Radiology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Toxicology">Toxicology</a></li>
-<li><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Medical device/equipment/supplies manufacturer/distributor in Others">Others</a></li></ul>
-
-</td>
-<td align="left" valign="top" style="line-height:14px;">
-
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Automation engineering">Automation engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Biomedical engineering">Biomedical engineering </a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Chemical engineering">Chemical engineering</a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Clinical engineering">Clinical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Computer science/engineering">Computer science/engineering </a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Consulting engineering">Consulting engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Control engineering">Control engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Data science/engineering">Data science/engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Design engineering">Design engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Electrical engineering">Electrical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Electronic engineering">Electronic engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Field engineering">Field engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Industrial engineering">Industrial engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Manufacturing engineering">Manufacturing engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Materials science/engineering">Materials science/engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Mechanical engineering">Mechanical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Product engineering">Product engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Quality engineering">Quality engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Research & development engineering">Research & development  <br> &nbsp;&nbsp;&nbsp; engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Sales engineering">Sales engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Safety engineering">Safety engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Software engineering">Software engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Supply chain engineering">Supply chain engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Systems engineering">Systems engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Telecommunication engineering">Telecommunication engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Testing engineering">Testing engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Others">Others  </a>
-
-</td>
-<td align="left" valign="top" style="line-height:19px;">
-
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Full Time">Full Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Part Time">Part Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Temporary">Temporary</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Contract">Contract</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Internship">Internship</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Commission">Commission</a>
-</td>
-<td align="left" valign="top" style="line-height:19px;">
-
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Bachelor">Bachelor</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Master">Master </a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="PhD">PhD</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<td align="left" valign="top" style="line-height:19px;">
-
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Biomedical">Biomedical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Chemical">Chemical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Civil">Civil</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Computer">Computer</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Electrical">Electrical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Environmental">Environmental</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Industrial">Industrial</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Information">Information</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Materials">Materials</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Mechanical">Mechanical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Software">Software</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Systems">Systems </a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<!-- <td align="left">
-<br>
-<a href="#exp" style="color: #0000FF" data-select="1"  id="link1">1</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="2" id="link2">2</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="3" id="link3">3</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="4" id="link4">4</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="5" id="link5">5</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="6" id="link6">6</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="7" id="link7">7</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="8" id="link8">8</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="9" id="link9">9</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="10" id="link10">10</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select=">10" id="link>10">> 10</a><br><br>
-</td> -->
-</tr>
-<tr>
-<td align="center" valign="middle"><b><i><a href="#providers" class="healthcaresectorSearch" style="color: #0000FF" data-select="Healthcare systems">Healthcare systems</a></i></b></td>
-<td align="left" valign="middle"><br> <a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Companies that specialize in healthcare systems including facilities, information, financial, and other systems.">Companies that specialize in healthcare systems including facilities, information, financial and other systems.</a></td>
-<td align="left" valign="top" >
-
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Civil/construction engineering">Civil/construction engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Computer science/engineering">Computer science/engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Consulting engineering">Consulting engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Data science/engineering">Data science/engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Energy engineering">Energy engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Facilities engineering">Facilities engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Industrial engineering">Industrial engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Information technology/engineering">Information <br> &nbsp;&nbsp; technology/engineering</a><br>  
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Infrastructure engineering">Infrastructure engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Quality engineering">Quality engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Safety engineering">Safety engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Software engineering">Software engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Systems engineering">Systems engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Telecommunication engineering">Telecommunication engineering</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Others">Others </a>
- </td>
-<td align="left" valign="top" style="line-height:21px;">
-
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Full Time">Full Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Part Time">Part Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Temporary">Temporary</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Contract">Contract</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Internship">Internship</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Commission">Commission</a>
-</td>
-<td align="left" valign="top" style="line-height:22px;">
-
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Bachelor">Bachelor</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Master">Master </a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="PhD">PhD</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<td align="left" valign="top" style="line-height:19px;">
-
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Biomedical">Biomedical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Chemical">Chemical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Civil">Civil</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Computer">Computer</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Electrical">Electrical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Environmental">Environmental</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Industrial">Industrial</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Information">Information</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Materials">Materials</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Mechanical">Mechanical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Software">Software</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Systems">Systems </a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<!-- <td align="left">
-<br>
-<a href="#exp" style="color: #0000FF" data-select="1"  id="link1">1</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="2" id="link2">2</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="3" id="link3">3</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="4" id="link4">4</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="5" id="link5">5</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="6" id="link6">6</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="7" id="link7">7</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="8" id="link8">8</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="9" id="link9">9</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="10" id="link10">10</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select=">10" id="link>10">> 10</a><br><br>
-</td> -->
-</tr>									
-<tr>
-
-<td align="center" valign="middle"><b><i><a href="#providers" class="healthcaresectorSearch" style="color: #0000FF" data-select="Biotechnology & Pharmaceuticals">Biotechnology & Pharmaceuticals</a></i></b> </td>
-<td align="left" valign="middle">
-<br><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Companies engaged in research into and development of biological substances leading to new drugs and/or medical procedures.">Companies engaged in research into and development of biological substances leading to new drugs and/or medical procedures. </a><br>
- <br><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Manufacturers of prescription or over-the-counter drugs.">Manufacturers of prescription or over-the-counter drugs</a><br>
- </td>
-<td align="left" valign="top" style="line-height:13px;">
-
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Automation engineering">Automation engineering</a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Biomedical engineering">Biomedical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Chemical engineering">Chemical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Computer science/engineering">Computer science/engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Consulting engineering">Consulting engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Data science/engineering">Data science/engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Electrical engineering">Electrical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Field engineering">Field engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Industrial engineering">Industrial engineering  jobs</a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Information technology/engineering">Information <br> &nbsp;&nbsp; technology/engineering </a><br> 
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Manufacturing engineering">Manufacturing engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Materials science/engineering">Materials science/engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Mechanical engineering">Mechanical engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Process engineering">Process engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Product engineering">Product engineering  </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Quality engineering">Quality engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Research & development engineering">Research & development <br> &nbsp;&nbsp;&nbsp; engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Safety engineering">Safety engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Software engineering">Software engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Systems engineering">Systems engineering </a><br>
-<a href= "#fjobs" style="color: #0000FF" class="jobfunctionSearch" data-select="Others">Others </a>
- </td>
-<td align="left" valign="top" style="line-height:20px;">
-
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Full Time">Full Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Part Time">Part Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Temporary">Temporary</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Contract">Contract</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Internship">Internship</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Commission">Commission</a>
-</td>
-<td align="left" valign="top" style="line-height:22px;">
-
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Bachelor">Bachelor</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Master">Master </a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="PhD">PhD</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<td align="left" valign="top" style="line-height:20px;">
-
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Biomedical">Biomedical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Chemical">Chemical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Civil">Civil</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Computer">Computer</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Electrical">Electrical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Environmental">Environmental</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Industrial">Industrial</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Information">Information</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Materials">Materials</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Mechanical">Mechanical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Software">Software</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Systems">Systems </a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<!-- <td align="left">
-<br>
-<a href="#exp" style="color: #0000FF" data-select="1"  id="link1">1</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="2" id="link2">2</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="3" id="link3">3</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="4" id="link4">4</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="5" id="link5">5</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="6" id="link6">6</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="7" id="link7">7</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="8" id="link8">8</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="9" id="link9">9</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="10" id="link10">10</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select=">10" id="link>10">> 10</a><br><br>
-</td> -->
-</tr>	
-<tr >
-<td align="center" valign="middle"><b><i><a href="#providers" class="healthcaresectorSearch" style="color: #0000FF" data-select="Healthcare consulting, support, and education">Healthcare consulting, support, and education</a></i></b></td>
-<td align ="left" valign="middle"><br><a href="#employer" class="healthcaresector_employerSearch" style="color: #0000FF" data-select="Companies that provide consulting service and support to healthcare, as well as continued education to healthcare personnel.">Companies that provide consulting service and support to healthcare, as well as continued education to healthcare personnel. </a></td>
-<td align ="left" valign="top" style="line-height:15px;">
-
-<a href= "#fjobs" style="color: #0000FF">Consulting/support engineering for</a>
-<ul><li><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Consulting/support engineering for Healthcare providers">Healthcare providers</a></li>
-<li><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Consulting/support engineering for Manufacturers of medical devices/equipment/supplies">	Manufacturers of medical devices/equipment/supplies</a></li>
-<li><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Consulting/support engineering for Healthcare systems">	Healthcare systems</a></li>
-<li><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Consulting/support engineering for Biotechnology & Pharmaceuticals"> Biotechnology & Pharmaceuticals</a></li>
-</ul><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF">Training/education engineering for</a>
-<ul><li><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Training/education engineering for Healthcare providers">	Healthcare providers</a></li>
-<li><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Training/education engineering for Manufacturers of medical devices/equipment/supplies">	Manufacturers of medical devices/equipment/supplies</a></li>
-<li><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Training/education engineering for Healthcare systems">	Healthcare systems</a></li>
-<li><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Training/education engineering for Biotechnology & Pharmaceuticals">	Biotechnology & Pharmaceuticals</a></li>
-</ul><a href="#fjobs" class="jobfunctionSearch" style="color: #0000FF" data-select="Others"> Others </a>
-
-</td>
-<td align="left" valign="top" style="line-height:19px;">
-
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Full Time">Full Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Part Time">Part Time</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Temporary">Temporary</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Contract">Contract</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Internship">Internship</a><br><br>
-<a href="#emp" class="jobtypeSearch" style="color: #0000FF" data-select="Commission">Commission</a>
-</td>
-<td align="left" valign="top" style="line-height:21px;">
-
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Bachelor">Bachelor</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Master">Master </a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="PhD">PhD</a><br><br><br>
-<a href="#deg" class="degreeSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<td align="left" valign="top" style="line-height:19px;">
-
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Biomedical">Biomedical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Chemical">Chemical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Civil">Civil</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Computer">Computer</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Electrical">Electrical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Environmental">Environmental</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Industrial">Industrial</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Information">Information</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Materials">Materials</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Mechanical">Mechanical</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Software">Software</a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Systems">Systems </a><br>
-<a href="#maj" class="majorSearch" style="color: #0000FF" data-select="Other">Other</a>
-</td>
-<!-- <td align="left">
-<br>
-<a href="#exp" style="color: #0000FF" data-select="1"  id="link1">1</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="2" id="link2">2</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="3" id="link3">3</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="4" id="link4">4</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="5" id="link5">5</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="6" id="link6">6</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="7" id="link7">7</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="8" id="link8">8</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="9" id="link9">9</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select="10" id="link10">10</a><br><br>
-<a href="#exp" style="color: #0000FF" data-select=">10" id="link>10">> 10</a><br><br>
-</td> -->
-</tr>								
-</table>
-</div>
-
-</div></div></div></section>
-  </div>
-	</body>
-										</html>
+.font1 {
+	 font-family: new;
+}
